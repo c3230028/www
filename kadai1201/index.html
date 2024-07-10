@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Design Practice</title>
+    <link href="style/style1.css" rel="stylesheet">
     <style>
         .section1_css{
             background-color: #e6f7ff;
@@ -30,6 +31,18 @@
             margin: 10px 0;
             width: 550px;
         }
+
+        @media screen and (max-width:979px) {
+            .section1_css{
+                background-color: #e6f7ff;
+            border: 2px #333;
+            padding: 10px;
+            margin: 10px 0; 
+            width: 550px;
+            display: 100px;
+            flex: 100px;
+        }    
+        }
     </style>
 </head>
 <body>
@@ -37,7 +50,7 @@
     <div class="section1_css">
         <h1>Section1</h1>
         <p>This is the first section. It has a light blue background,padding,margin,and a box shadow.The layout adjusts responsively to different screen sizes.</p>
-        <img src="im/section1.jpg">
+        <img src="im/section1.jpg" id="head_img">
     </div>
 
     <div class="section2_css">
